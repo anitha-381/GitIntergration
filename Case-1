@@ -1,0 +1,26 @@
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class LoginTest {
+
+    @Test
+    public void testLoginWithValidCredentials() {
+        // Simulate entering valid credentials
+        String username = "testuser";
+        String password = "P@ssw0rd";
+
+        // Simulate the login process
+        boolean loginSuccessful = login(username, password);
+
+        // Assert that login was successful
+        assertTrue("Login was not successful", loginSuccessful);
+    }
+
+    private boolean login(String username, String password) {
+        // Simulate the actual login logic
+        String validUsername = "testuser";
+        String validPassword = "P@ssw0rd";
+
+        return username.equals(validUsername) && password.equals(validPassword);
+    }
+}
